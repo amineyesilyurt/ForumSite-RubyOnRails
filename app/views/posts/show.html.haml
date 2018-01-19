@@ -1,0 +1,12 @@
+#post_content
+ %h1=@post.title
+ %p=@post.content
+ #comments
+  %h2=@post.comments.count
+  = render @post.comments
+
+  %h3 Yorum Ekle
+  =render "comments/form"
+ =link_to "Edit", edit_post_path(@post)
+ =link_to "Delete", edit_post_path(@post), method: :destroy, data: { confirm: "Are you sure?" }
+ =link_to "Home", root_path

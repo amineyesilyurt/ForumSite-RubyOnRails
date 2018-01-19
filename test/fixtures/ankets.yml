@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cinsiyet: MyString
+  egitim: MyString
+  dogum: 2016-07-26
+  user_id: 
+  kelime: MyString
+
+two:
+  cinsiyet: MyString
+  egitim: MyString
+  dogum: 2016-07-26
+  user_id: 
+  kelime: MyString

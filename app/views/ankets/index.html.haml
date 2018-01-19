@@ -1,0 +1,9 @@
+#ankets
+  - @ankets.each do |anket|
+    .anket
+      %h2 anket.cinsiyet
+      %p.date 
+        Published at
+        = time_ago_in_words(anket.created_at)
+        ago by
+        =anket.user_id
